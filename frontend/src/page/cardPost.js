@@ -32,7 +32,7 @@ export default function CardPost({ post }) {
   async function removeLike(){
      await axios.put(`${baseUrl}/unlike/${post._id}`);
     setLike(false);
-    setLikeLength(prev=>prev+1);
+    setLikeLength(prev=>prev-1);
   }
   return (
     <Card sx={{ width: 450, mt: 3 }}>
