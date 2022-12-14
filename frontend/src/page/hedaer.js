@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import profile from "./img/profile.png";
-import { baseUrl, generatePublicUrl, loggedin } from "../utils/baseUrl";
+import { baseUrl, generatePublicUrl } from "../utils/baseUrl";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -181,7 +181,7 @@ const Header = function ({ setToken }) {
     if (Cookies.get("user")) {
       (async function () {
         try {
-          const user = axios.post(`${loggedin}/api/authUser`, {
+          const user = axios.post(`${baseUrl}/api/authUser`, {
             isLoggedin: true,
           });
           const notification = axios.get(`${baseUrl}/totalnotificationunread`);
