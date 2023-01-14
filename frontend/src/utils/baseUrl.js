@@ -8,5 +8,5 @@ export const generatePublicUrl=(fileName)=>{
 
 export const baseUrl='/api'
 export const generatePublicUrl=(fileName)=>{
-    return `$/static/public/${fileName}`;
+    return `/static/public/${fileName}`;
 }
