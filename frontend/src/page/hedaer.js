@@ -73,6 +73,7 @@ const Header = function ({ setToken }) {
   async function logout(){
     await axios.post(`${baseUrl}/logout`);
     setToken(false);
+    navigate(`/login`)
   }
   async function profilePage(){
     navigate(`/profile/${user}`)
@@ -214,7 +215,7 @@ const Header = function ({ setToken }) {
         <AppBar position="static">
           <Toolbar>
             <Typography
-              variant="h6"
+              variant="button"
               wrap="true"
               component="div"
               sx={{ mr: "5px" }}
