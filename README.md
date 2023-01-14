@@ -1,5 +1,4 @@
 # minisocial
 
 
-https://minisocialapp.herokuapp.com/
-
+https://minisocial.cyclic.app/
