@@ -131,7 +131,7 @@ export default function Signup({setToken}) {
         sx={{
           display: "flex",
           width: "100vw",
-          height: 580,
+          height: "100vh",
           backgroundColor: "#B0B0B0",
         }}
       >
